@@ -14,5 +14,12 @@ module.exports = {
     method: ['GET'],
     run: 'cd ./app/captcha && micro captcha.js -p 3002',
     debug: true
+  }, {
+    slug: 'swagger',
+    pathname: '/api/swagger.json',
+    dest: 'swagger.api.localhost',
+    method: ['GET'],
+    run: 'cd ./app/swagger && micro swagger.js -p 3003',
+    debug: true
   }]
 }
