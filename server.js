@@ -21,5 +21,12 @@ module.exports = {
     method: ['GET'],
     run: 'cd ./app/swagger && micro-dev swagger.js -p 3003',
     debug: true
+  }, {
+    slug: 'stream',
+    pathname: '/api/stream',
+    dest: 'stream.api.localhost',
+    method: ['GET'],
+    run: 'cd ./app/stream && micro-dev stream.js -p 3004',
+    debug: true
   }]
 }
