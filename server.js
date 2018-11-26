@@ -28,5 +28,12 @@ module.exports = {
     method: ['GET'],
     run: 'cd ./app/stream && micro-dev stream.js -p 3004',
     debug: true
+  }, {
+    slug: 'pdf',
+    pathname: '/api/pdf',
+    dest: 'pdf.api.localhost',
+    method: ['GET'],
+    run: 'cd ./app/pdf && micro-dev pdfdemo.js -p 3005',
+    debug: true
   }]
 }
